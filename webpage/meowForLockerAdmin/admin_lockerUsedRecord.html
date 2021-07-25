@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/admin.css" type="text/css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <meta charset = "utf-8">
+        <title>admin_lockerUsedRecord</title>
+    </head>
+    <body style="background-color: #fbf8f3;">
+
+        <nav class = "navbar navbar-dark bg-dark navbar-fixed-top" style="padding: 0.5rem 1rem; background-color: #847669 !important;">
+            
+            <a class = "navbar-brank" style="color: #fff; text-decoration:none;">
+                <!--這邊要放我們的icon-->
+                <strong style="font-size: 1.5em;">Meow</strong>
+            </a>
+            
+            <div>
+                <a href = "#"><button class="btn btn-outline-light" type="submit">置物櫃狀態</button></a>
+                <a href = "#"><button class="btn btn-outline-light" type="submit" style="margin: 0rem 0.5rem;">使用紀錄</button></a>
+                <a href = "#"><button class="btn btn-outline-light" type="submit">失敗紀錄</button></a>
+                <a href = "#"><button class="btn btn-outline-light" type="submit" style="margin: 0rem 0.5rem;">故障紀錄</button></a>
+                <a href = "#"><button class="btn btn-outline-light" type="submit">使用說明</button></a>
+            </div>
+        </nav>
+
+        <!-- 中間區塊 -->
+        <div class = "container" style = " padding: 50px 100px 20px;">
+            <h2 style="margin-bottom: 0;"><strong>置物櫃使用紀錄</strong></h2>
+            <div style="margin-bottom:1em; text-align: right;">
+                
+                <span><input id="date" type="date" style="height: 30px;"></span>
+                <select style="height: 30px; margin: 0 5px;">
+                    <option disabled selected hidden>選擇編號</option>
+                    <option>01</option>
+                    <option>02</option>
+                    <option>03</option>
+                    <option>04</option>
+                    <option>05</option>
+                    <option>06</option>
+                    <option>07</option>
+                    <option>08</option>
+                    <option>09</option>
+                    <option>10</option>
+                </select>
+                <a href = "admin_lockerState.html">
+                    <input type="button" value="確認"/>
+                </a>
+            </div>
+            <!-- 使用紀錄(表格) -->
+            <table class="table table-hover table-striped" style="margin-top: 2rem;">
+                <thead>
+                    <tr style="border-width: 1px">
+                        <th scope="col">#</th>
+                        <th scope="col">起始時間</th>
+                        <th scope="col">結束時間</th>
+                        <th scope="col">租借人</th>
+                        <th scope="col">租借費用</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- 第一筆 -->
+                    <tr>
+                        <th scope="row">01</th> <!--置物櫃編號-->
+                        <td style = "max-width: 100px;">
+                            <a>2020/07/24 14:24:39</a>
+                        </td>
+                        <td class = "text-truncate" style = "max-width: 100px;">
+                            <a>2020/07/24 17:19:20</a>
+                        </td>
+                        <td>xxx</td>
+                        <td>20</td>
+                    </tr>
+                    <!-- 第二筆(示意) -->
+                    <tr>
+                        <th scope="row">07</th>
+                        <td class = "text-truncate" style = "max-width: 100px;">
+                            <a>2020/07/23 09:58:21</a>
+                        </td>
+                        <td class = "text-truncate" style = "max-width: 100px;">
+                            <a>2020/07/23 18:02:46</a>
+                        </td>
+                        <td>ooo</td>
+                        <td>50</td>
+                    </tr>
+                    <!-- 第三筆(示意) -->
+                    <tr>
+                        <th scope="row">03</th>
+                        <td class = "text-truncate" style = "max-width: 100px;">
+                            <a>2020/07/20 07:30:36</a>
+                        </td>
+                        <td class = "text-truncate" style = "max-width: 100px;">
+                            <a>2020/07/23 22:15:28</a>
+                        </td>
+                        <td>ooo</td>
+                        <td>200</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </body>
+    
+</html>
