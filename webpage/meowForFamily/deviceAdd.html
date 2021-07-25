@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/webpage/css/info.css" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <title>Add new device</title>
+</head>
+
+<body style="background-color: #fbf8f3;">
+
+    <nav class="navbar navbar-dark bg-dark navbar-fixed-top"
+        style="padding: 0.5rem 1rem; background-color: #847669 !important;">
+        <div style="width: 54px;"></div>
+        <a class="navbar-brank" style="color: #fff; text-decoration:none;;">
+            <strong style="font-size: 1.5em;">Meow</strong>
+        </a>
+
+        <!-- 暫時的寫法QQ 讓我慢慢研究自適性網頁排版 -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        歷史紀錄
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #fbf8f3;">
+                        <li><a class="dropdown-item" href="#">設備使用紀錄</a></li>
+                        <li><a class="dropdown-item" href="#">失敗紀錄</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        成員管理
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #fbf8f3;">
+                        <li><a class="dropdown-item" href="#">成員列表</a></li>
+                        <li><a class="dropdown-item" href="#">新增成員</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        設備管理
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #fbf8f3;">
+                        <li><a class="dropdown-item" href="#">夜間模式設定</a></li>
+                        <li><a class="dropdown-item" href="#">新增設備</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">使用說明</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <!-- 中間區塊 -->
+
+    <div class="container" style=" padding: 50px 100px 20px;">
+        <h1>新增設備</h1>
+        <div class="info-basic">
+            <!-- 左半 -->
+            <div class="left">
+                <img src="/asset/oil.png" class="card-img-top" width="300">
+                <button type="button" class="btn btn-outline-light btn-lg" color: #847669>修改圖片</button>
+            </div>
+
+            <div class="grayline"></div>
+
+            <!-- 右半 -->
+            <div class="right">
+                <h2 style="margin:0.5em 0em 0em 0em">名稱</h2>
+                <div class="input-group" style="margin:1em 0em">
+                    <input type="text" style="margin:0em 1em 0em 0em" class="form-control">
+                    <select class="btn btn-outline-secondary dropdown-toggle form-control">
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" disabled selected hidden>請選擇設備種類</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">門</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">電燈</option>
+                    </select>
+                </div>
+                <h2 style="margin:0.5em 0em 0em 0em">限制時間設定</h2>
+                <div class="input-group" style="margin:1em 0em">
+                    <select class="btn btn-outline-secondary dropdown-toggle form-control">
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" disabled selected hidden> </option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">00</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">01</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">02</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">03</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">04</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">05</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">06</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">07</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">08</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">09</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">10</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">11</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">12</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">13</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">14</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">15</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">16</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">17</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">19</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">19</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">20</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">21</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">22</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">23</option>
+
+                    </select>
+                    <h3 style="margin:0em 0.5em">時</h3>
+                    <select class="btn btn-outline-secondary dropdown-toggle form-control">
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" disabled selected hidden> </option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">00</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">10</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">20</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">30</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">40</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">50</option>
+                    </select>
+                    <h3 style="margin:0em 0.5em">分</h3>
+                </div>
+                <h4 style="margin:0.5em 1em; text-align: center;">至</h4>
+                <div class="input-group" style="margin:1em 0em">
+                    <select class="btn btn-outline-secondary dropdown-toggle form-control">
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" disabled selected hidden> </option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">00</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">01</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">02</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">03</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">04</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">05</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">06</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">07</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">08</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">09</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">10</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">11</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">12</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">13</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">14</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">15</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">16</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">17</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">19</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">19</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">20</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">21</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">22</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">23</option>
+                
+                    </select>
+                    <h3 style="margin:0em 0.5em">時</h3>
+                    <select class="btn btn-outline-secondary dropdown-toggle form-control">
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" disabled selected hidden> </option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">00</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">10</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">20</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">30</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">40</option>
+                        <option class="btn btn-outline-secondary dropdown-toggle form-control" value="">50</option>
+                    </select>
+                    <h3 style="margin:0em 0.5em">分</h3>
+                </div>
+                
+
+
+                <div class="function-button">
+                    <button type="button" class="btn btn-outline-light" color: #847669>確認新增</button>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>

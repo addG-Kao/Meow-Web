@@ -1,0 +1,23 @@
+/* 網頁的基礎背景設定*/
+* {
+  box-sizing: border-box;
+  font-family: Microsoft JhengHei;
+}
+
+.container .card-deck {
+  display: flex;
+  flex-direction: row;
+}
+
+.container .card-deck .card {
+  padding: 1em;
+  margin: 1em;
+  width: 14em;
+}
+.container .card-deck .card .card-img-top {
+  border-width: 1px;
+  border-style: solid;
+}
+.container .card-deck .card-body {
+  text-align: center;
+}
