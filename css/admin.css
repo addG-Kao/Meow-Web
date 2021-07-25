@@ -1,3 +1,9 @@
+nav a .grayLi{
+    background-color: #a09182 !important;
+}
+nav a .grayLi:hover{
+    background-color: #fff !important;
+}
 /* 中間部分的額外設定 */
 
 .container h2{ /*標題*/
@@ -55,3 +61,8 @@
     background-color:#a09182 !important;
     border-color: #847669 !important;
 }
+
+.container table tbody tr td a:hover{
+    color: #847669 !important;
+    text-decoration: underline;
+} 
