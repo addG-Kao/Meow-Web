@@ -1,0 +1,77 @@
+.info-basic {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.info-basic .grayline {
+  background-color: darkgray;
+  margin: 1em;
+  padding: 5px;
+}
+
+.btn-outline-light {
+  color: #847669;
+  background-color: #fff;
+  border-color: #847669;
+}
+.info-basic .btn-outline-light:hover,
+.info-basic .btn-outline-light:focus,
+.info-basic .btn-outline-light:active:hover {
+  color: #fff;
+  background-color: #847669;
+  border-color: #847669;
+}
+
+/* 左半 */
+.info-basic .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1em;
+}
+.info-basic .left .card-img-top {
+  margin: 2em 0em;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.info-basic .left .btn {
+  margin: 0em 0em 1em 0em;
+  background-color: #847669;
+}
+
+/* 右半 */
+.info-basic .right {
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+}
+
+.info-basic .right .div {
+  margin: 2em 0em;
+}
+
+.info-basic .right .function-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.info-basic .right .function-button .btn {
+  margin: 0em 1em;
+  background-color: #847669;
+}
+
+/* 按鈕 */
+.info-basic .right .btn-secondary-light {
+  color: #fff;
+  background-color: #fff;
+  border-color: #fff9;
+}
+.info-basic .right .btn-outline-secondary:hover,
+.info-basic .right .btn-outline-secondary:focus,
+.info-basic .right .btn-outline-secondary:active:hover {
+  color: #847669;
+  background-color: #fff;
+  border-color: #847669;
+}
