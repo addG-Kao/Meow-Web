@@ -1,11 +1,12 @@
+/* 上半部nav的部分 */
 nav a .grayLi{
     background-color: #a09182 !important;
 }
 nav a .grayLi:hover{
     background-color: #fff !important;
 }
-/* 中間部分的額外設定 */
 
+/* 中間部分的額外設定 */
 .container h2{ /*標題*/
     margin-bottom: 2rem;
 }

@@ -1,0 +1,29 @@
+/* 中間部分的額外設定 */
+.container h2{ /*標題*/
+    margin-bottom: 2rem;
+}
+
+.btn-set{
+    color: #fff !important;
+    background-color: #847669 !important;
+    border-color: #fbf8f3 !important;
+}
+
+.container div{
+    text-align: center;
+}
+.container .text{
+    box-sizing: border-box;
+    text-align: center;
+}
+.container .text .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 50px;
+}
+.container .text .content p{
+    margin-bottom: 0;
+    text-align: left;
+    color: #707070;
+}
