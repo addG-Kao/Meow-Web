@@ -17,10 +17,12 @@
     <nav class="navbar navbar-dark bg-dark navbar-fixed-top"
         style="padding: 0.5rem 1rem; background-color: #847669 !important;">
         <div style="width: 54px;"></div>
+        <!--排版用的div-->
+    
         <a class="navbar-brank" style="color: #fff; text-decoration:none;;">
             <strong style="font-size: 1.5em;">Meow</strong>
         </a>
-
+    
         <!-- 暫時的寫法QQ 讓我慢慢研究自適性網頁排版 -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,40 +31,23 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        歷史紀錄
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #fbf8f3;">
-                        <li><a class="dropdown-item" href="#">設備使用紀錄</a></li>
-                        <li><a class="dropdown-item" href="#">失敗紀錄</a></li>
-                    </ul>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">歷史紀錄</a>
+                <li class = "rounded-top" style="background-color: #a09182"><a class="nav-link " href="historyAll.html">&nbsp;&nbsp;設備使用紀錄</a></li>
+                <li class = "rounded-bottom" style="background-color: #a09182"><a class="nav-link " href="historyFail.html">&nbsp;&nbsp;失敗紀錄</a></li>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        成員管理
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #fbf8f3;">
-                        <li><a class="dropdown-item" href="#">成員列表</a></li>
-                        <li><a class="dropdown-item" href="#">新增成員</a></li>
-                    </ul>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        設備管理
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #fbf8f3;">
-                        <li><a class="dropdown-item" href="#">夜間模式設定</a></li>
-                        <li><a class="dropdown-item" href="#">新增設備</a></li>
-                    </ul>
+                <li class="nav-item">
+                    <a class="nav-link" href="memberList.html">成員管理</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="deviceList.html">設備管理</a>
+                </li>
+        
                 <li class="nav-item">
                     <a class="nav-link" href="#">使用說明</a>
                 </li>
             </ul>
-
         </div>
     </nav>
 

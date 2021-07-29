@@ -9,7 +9,7 @@
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"></script>
     <meta charset="utf-8">
-    <title>basic</title>
+    <title>History all</title>
 </head>
 
 <body style="background-color: #fbf8f3;">
@@ -17,10 +17,12 @@
     <nav class="navbar navbar-dark bg-dark navbar-fixed-top"
         style="padding: 0.5rem 1rem; background-color: #847669 !important;">
         <div style="width: 54px;"></div>
+        <!--排版用的div-->
+    
         <a class="navbar-brank" style="color: #fff; text-decoration:none;;">
             <strong style="font-size: 1.5em;">Meow</strong>
         </a>
-
+    
         <!-- 暫時的寫法QQ 讓我慢慢研究自適性網頁排版 -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,120 +31,73 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        歷史紀錄
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #fbf8f3;">
-                        <li><a class="dropdown-item" href="#">設備使用紀錄</a></li>
-                        <li><a class="dropdown-item" href="#">失敗紀錄</a></li>
-                    </ul>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">歷史紀錄</a>
+                <li class = "rounded-top" style="background-color: #a09182"><a class="nav-link " href="historyAll.html">&nbsp;&nbsp;設備使用紀錄</a></li>
+                <li class = "rounded-bottom" style="background-color: #a09182"><a class="nav-link " href="historyFail.html">&nbsp;&nbsp;失敗紀錄</a></li>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        成員管理
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #fbf8f3;">
-                        <li><a class="dropdown-item" href="#">成員列表</a></li>
-                        <li><a class="dropdown-item" href="#">新增成員</a></li>
-                    </ul>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        設備管理
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #fbf8f3;">
-                        <li><a class="dropdown-item" href="#">夜間模式設定</a></li>
-                        <li><a class="dropdown-item" href="#">新增設備</a></li>
-                    </ul>
+                <li class="nav-item">
+                    <a class="nav-link" href="memberList.html">成員管理</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="deviceList.html">設備管理</a>
+                </li>
+        
                 <li class="nav-item">
                     <a class="nav-link" href="#">使用說明</a>
                 </li>
             </ul>
-
         </div>
     </nav>
 
     <!-- 中間區塊 -->
     <div class="container" style=" padding: 50px 100px 20px;">
         <h1>設備使用記錄</h1>
-        <div class="container" style=" padding: 50px 100px 20px;">
-            <h2 style="margin-bottom: 0;"><strong>置物櫃使用紀錄</strong></h2>
-            <div style="margin-bottom:1em; text-align: right;">
+        <div style="margin-bottom:1em; text-align: right;">
         
-                <span><input id="date" type="date" style="height: 30px;"></span>
-                <select style="height: 30px; margin: 0 5px;">
-                    <option disabled selected hidden>選擇編號</option>
-                    <option>01</option>
-                    <option>02</option>
-                    <option>03</option>
-                    <option>04</option>
-                    <option>05</option>
-                    <option>06</option>
-                    <option>07</option>
-                    <option>08</option>
-                    <option>09</option>
-                    <option>10</option>
-                </select>
-                <a href="admin_lockerState.html">
-                    <input type="button" value="確認" />
-                </a>
-            </div>
-            <!-- 使用紀錄(表格) -->
-            <table class="table table-hover table-striped" style="margin-top: 2rem;">
-                <thead>
-                    <tr style="border-width: 1px">
-                        <th scope="col">#</th>
-                        <th scope="col">起始時間</th>
-                        <th scope="col">結束時間</th>
-                        <th scope="col">租借人</th>
-                        <th scope="col">租借費用</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- 第一筆 -->
-                    <tr>
-                        <th scope="row">01</th>
-                        <!--置物櫃編號-->
-                        <td style="max-width: 100px;">
-                            <a>2020/07/24 14:24:39</a>
-                        </td>
-                        <td class="text-truncate" style="max-width: 100px;">
-                            <a>2020/07/24 17:19:20</a>
-                        </td>
-                        <td>xxx</td>
-                        <td>20</td>
-                    </tr>
-                    <!-- 第二筆(示意) -->
-                    <tr>
-                        <th scope="row">07</th>
-                        <td class="text-truncate" style="max-width: 100px;">
-                            <a>2020/07/23 09:58:21</a>
-                        </td>
-                        <td class="text-truncate" style="max-width: 100px;">
-                            <a>2020/07/23 18:02:46</a>
-                        </td>
-                        <td>ooo</td>
-                        <td>50</td>
-                    </tr>
-                    <!-- 第三筆(示意) -->
-                    <tr>
-                        <th scope="row">03</th>
-                        <td class="text-truncate" style="max-width: 100px;">
-                            <a>2020/07/20 07:30:36</a>
-                        </td>
-                        <td class="text-truncate" style="max-width: 100px;">
-                            <a>2020/07/23 22:15:28</a>
-                        </td>
-                        <td>ooo</td>
-                        <td>200</td>
-                    </tr>
-                </tbody>
-            </table>
+            <span><input id="date" type="date" style="height: 30px;"></span>
+            <select style="height: 30px; margin: 0 5px;">
+                <option disabled selected hidden>選擇成員</option>
+                <option>Daddy</option>
+                <option>Mommy</option>
+                <option>Lemon</option>
+            </select>
+            <a href="#">
+                <input type="button" value="確認" />
+            </a>
         </div>
+        <!-- 使用紀錄(表格) -->
+        <table class="table table-hover table-striped" style="margin-top: 2rem;">
+            <thead>
+                <tr style="border-width: 1px">
+                    <th scope="col">#</th>
+                    <th scope="col">家電名稱</th>
+                    <th scope="col">起始時間</th>
+                    <th scope="col">結束時間</th>
+                    <th scope="col">成員</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- 第一筆 -->
+                <tr>
+                    <th scope="row">01</th>
+                    <td>烤派蒙</td>
+                    <td>2020/07/24 14:24:39</td>
+                    <td>2020/07/24 17:19:20</td>
+                    
+                    <td>Mommy</td>
+                </tr>
+                <!-- 第二筆(示意) -->
+                <tr>
+                    <th scope="row">02</th>
+                    <td>煮派蒙</td>
+                    <td>2020/07/20 07:30:36</a>
+                    <td>2020/07/23 22:15:28</td>
+                    <td>Lemon</td>
+                </tr>
+            </tbody>
+        </table>
 
     </div>
 
