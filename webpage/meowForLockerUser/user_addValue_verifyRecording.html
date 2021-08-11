@@ -6,7 +6,11 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
         <meta charset = "utf-8">
-        <title>user_recordCountdown</title>
+        
+        <!-- 如果要自動跳轉把註解拿掉 -->
+        <!-- <meta http-equiv="refresh" content="3; url=user_applyAccount_recordCountdown.html">  -->
+        <!-- <meta http-equiv="refresh" content="3; url=user_applyAccount_success.html"> -->
+        <title>user_applyAccount_verifyRecording</title>
     </head>
     <body style="background-color: #fbf8f3;">
 
@@ -19,37 +23,20 @@
         </nav>
 
         <!-- 中間區塊 -->
-        <div class = "container" style = " padding: 50px 100px 20px 100px;">
+        <div class = "container" style = " padding: 50px 100px 20px;">
             <div>
                 <h2><strong>加值驗證</strong></h2>
             </div>
             <div class="loader">
-                <h1>
-                    <span id="timer"></span>
-                </h1>
+                <h1><span>
+                    <small>錄音中</small>
+                </span></h1>
             </div>
             <div>
-                <h2>倒數結束後開始錄音...</h2>
-                <h5 class="text-muted">請讀出以下詞語(1/24)</h5>
+                <h5 class="text-muted">請讀出以下詞語</h5>
                 <h1>驗證</h1>
             </div>
         </div>
 
-        <!-- 倒數的部分(js) -->
-        <script>
-            var timer_elem = document.getElementById("timer");
-            var countdown_value = 5;
-            (function(){
-                window.timer = window.setInterval(()=>{
-                    if(countdown_value==0){
-                        window.clearInterval(window.timer);
-                        // window.location.href = "user_applyAccount_recording.html";
-                    }
-                    timer_elem.innerText = countdown_value;
-                    countdown_value -= 1;
-                }, 1000);
-            })();
-        </script>
     </body>
-    
 </html>
