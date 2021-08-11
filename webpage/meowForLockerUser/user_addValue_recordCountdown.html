@@ -21,7 +21,7 @@
         <!-- 中間區塊 -->
         <div class = "container" style = " padding: 50px 100px 20px 100px;">
             <div>
-                <h2><strong>申請帳號</strong></h2>
+                <h2><strong>加值驗證</strong></h2>
             </div>
             <div class="loader">
                 <h1>
@@ -31,7 +31,7 @@
             <div>
                 <h2>倒數結束後開始錄音...</h2>
                 <h5 class="text-muted">請讀出以下詞語(1/24)</h5>
-                <h1>開門</h1>
+                <h1>驗證</h1>
             </div>
         </div>
 
@@ -43,7 +43,7 @@
                 window.timer = window.setInterval(()=>{
                     if(countdown_value==0){
                         window.clearInterval(window.timer);
-                        // window.location.href = "user_recording.html";
+                        // window.location.href = "user_applyAccount_recording.html";
                     }
                     timer_elem.innerText = countdown_value;
                     countdown_value -= 1;
