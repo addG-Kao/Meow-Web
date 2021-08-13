@@ -1,5 +1,5 @@
 .loader,
-#pending .loader:after {
+.loader:after {
   border-radius: 50%;
   width: 10em;
   height: 10em;
@@ -8,10 +8,6 @@
   margin: 60px auto;
   font-size: 20px;
   position: relative;
-  border-top: 1.1em solid rgba(132, 118, 105, 0.2);
-  border-right: 1.1em solid rgba(132, 118, 105, 0.35);
-  border-bottom: 1.1em solid rgba(132, 118, 105, 0.5);
-  border-left: 1.1em solid rgba(132, 118, 105, 0.65);
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -20,6 +16,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.loaderBrown{
+  border-top: 1.1em solid rgba(132, 118, 105, 0.2);
+  border-right: 1.1em solid rgba(132, 118, 105, 0.35);
+  border-bottom: 1.1em solid rgba(132, 118, 105, 0.5);
+  border-left: 1.1em solid rgba(132, 118, 105, 0.65);
+}
+.loaderGreen{
+  border-top: 1.1em solid rgba(125,230,150,0.2);
+  border-right: 1.1em solid rgba(125,230,150,0.35);
+  border-bottom: 1.1em solid rgba(125,230,150,0.5);
+  border-left: 1.1em solid rgba(125,230,150,0.65);
 }
 .loader h1 {
   -webkit-animation: load_h1 1.8s infinite linear;
